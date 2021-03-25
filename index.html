@@ -4,8 +4,38 @@
     <title> FridayKrabs' Commands </title>
     <link rel="shortcut icon" href="favicon.jpg" type="image/jpg">
 </head>
+
+<script>
+    function playMusic1(){
+        var music1=Audio('rickroll.mp3');
+        music1.play();
+    }
+
+    document.getElementById('smoothy').volume = 0.8;
+
+    function playMusic2(){
+        var music2=Audio('Recording.mp3');
+        music2.play();
+    }
+</script>
+
+
 <style>
     body{background: lightsteelblue}
+
+    .button{border: none;
+            color: lightsalmon;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;}
+
+    .button:hover{
+        color: darksalmon;
+        cursor: pointer;}
 
     h1{font-family: sans-serif;
        color: rgb(22, 5, 97);
@@ -85,7 +115,16 @@
     <br>
     <br>
     <br>
-    <p> FREE BOBUX GENERATURR WEBSIT JUST <a href="https://youtu.be/dQw4w9WgXcQ">CLIK HEREE!!1!</a></p>
+    <p> FREE BOBUX GENERATURR WEBSIT JUST </p>
+
+        <button onclick = "playMusic1()" class = "button"> KLIKK HEREE!!1! </button>
+        
+        <button onmouseover = "playMusic2()" class = "button":hover> Do it pussy </button>
+
+    <audio id = 'smoothy' controls autoplay loop>
+        <source src = "smooth.mp3"> Smooth Music </source>
+        Bruh ur browser can't play the music lmao
+    </audio>
 
 
 
